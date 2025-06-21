@@ -274,7 +274,7 @@ def create_zip_file(translated_files):
                 # Tạo tên file mới
                 original_name = file_info['filename']
                 name_without_ext = os.path.splitext(original_name)[0]
-                new_filename = f"{name_without_ext}_vietnamese.srt"
+                new_filename = f"{name_without_ext}.srt"
                 
                 # Thêm vào ZIP
                 zip_file.writestr(new_filename, file_info['content'])
